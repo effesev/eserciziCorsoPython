@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Scontrino</title>
+</head>
+<body>
+    <!-- Compila i campi con il nome del prodotto e il suo prezzo. 
+     Clicca su aggiungi per farlo comparire nella lista sottostante:
+     <li>Nutella - 4.50 €</li>
+     <li>Pane - 1.20 €</li>
+     <li>Acqua - 2.10 €</li>
+    Quando ho finito di inserire i prodotti, 
+    al click su Calcola totale verrà stampato il totale all'interno del tag H2.
+    Consiglio: crea due array distinti e separati 
+    nei quali inserisci in uno i prodotti nell'altro i prezzi-->
+
+    <h1>Scontrino della Spesa</h1>
+
+    <p>Compila i seguenti campi per calcolare lo scontrino della spesa</p>
+    
+    <form>
+        <input type="text" id="nameProd" placeholder="Prodotto">
+        <input type="number" id="prezzoProd" placeholder="Prezzo">
+
+        <input type="button" value="Aggiungi" id="btnAggiungi">
+    </form>
+
+    <p>Lista Spesa:</p>
+    <ul id="listaSpesa"></ul>
+
+    <button id="btnTotale">Calcola Totale</button>
+
+    <p>Costo Totale:</p>
+    <h3 id="grandTotal"></h3>
+
+    <p>Numero di articoli:</p>
+    <h3 id="numTotArticoli"></h3>
+
+    <script src="./js/script06.js"></script>
+</body>
+</html>
